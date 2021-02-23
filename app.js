@@ -10,7 +10,7 @@ const removeVowel = (letter) =>{
 newArr=[]
 let everyLetter =letter.split("")  
 for(let i =0; i<everyLetter.length; i++) {
-// console.log(everyLetter[i])
+
 if (everyLetter[i] != "a" && everyLetter[i] != "o" && everyLetter[i] !="i" && everyLetter[i] != "e" && everyLetter[i]!= "u") 
 {newArr.push(everyLetter[i])}  
 } 
@@ -31,7 +31,9 @@ removeVowel("i lovuue algos anid pastia")
 
 // How to sort something in place without an extra data structure
 
-// const bubbleSort = (array) => {
+const bubbleSort = (array) => {
+    console.log(array.length)
+    
     // Make some sort of loop that keeps happening if there were any swaps
     // that happened this turn
 
@@ -48,9 +50,9 @@ removeVowel("i lovuue algos anid pastia")
     // Make sure to keep track of whether a swap happened!
 
     // After both loops have exited, remember to return the array
-//     return array;
-// }
+    // return array;
+}
 
-// const test = [1, 4, 0, 9, -1];
-// const test2 = [10, 24, -10, 2, -1];
+const test = [1, 4, 0, 9, -1];
+const test2 = [10, 24, -10, 2, -1];
 // console.log(bubbleSort(test2));
