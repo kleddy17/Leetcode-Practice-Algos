@@ -6,3 +6,9 @@
 // Output: "ltcdscmmntyfrcdrs"
 
 console.log("hi")
+
+const removeVowel = () => {
+console.log(removeVowel)
+}
+
+removeVowel("leetcodeisacommunityforcoders")
