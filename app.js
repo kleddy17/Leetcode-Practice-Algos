@@ -6,21 +6,21 @@
 // Output: "ltcdscmmntyfrcdrs"
 
 
-const removeVowel = (letter) =>{
-newArr=[]
-let everyLetter =letter.split("")  
-for(let i =0; i<everyLetter.length; i++) {
+// const removeVowel = (letter) =>{
+// newArr=[]
+// let everyLetter =letter.split("")  
+// for(let i =0; i<everyLetter.length; i++) {
 
-if (everyLetter[i] != "a" && everyLetter[i] != "o" && everyLetter[i] !="i" && everyLetter[i] != "e" && everyLetter[i]!= "u") 
-{newArr.push(everyLetter[i])}  
-} 
-noVowels = newArr.join("")
-return{
-    noVowels
-}
+// if (everyLetter[i] != "a" && everyLetter[i] != "o" && everyLetter[i] !="i" && everyLetter[i] != "e" && everyLetter[i]!= "u") 
+// {newArr.push(everyLetter[i])}  
+// } 
+// noVowels = newArr.join("")
+// return{
+//     noVowels
+// }
 
-}
-removeVowel("i lovuue algos anid pastia")
+// }
+// removeVowel("i lovuue algos anid pastia")
 
 
 
@@ -31,28 +31,42 @@ removeVowel("i lovuue algos anid pastia")
 
 // How to sort something in place without an extra data structure
 
-const bubbleSort = (array) => {
-    console.log(array.length)
-    
-    // Make some sort of loop that keeps happening if there were any swaps
-    // that happened this turn
+// const bubbleSort = (test) => {
+//     for (let i = 0; i< test.length; i++)
+//     console.log(i)
+// }
 
-    // reset swapHappened to false each time so we can detect if a swap
-    // happened in this specific iteration.
+// const test = [1, 4, 0, 9, -1];
+// bubbleSort(test)
+// console.log(bubbleSort(test));
 
-    // Make another loop (inside the first one) to go through one 
-    // round of swapping from the start of the list to the end
+// ALGO #3
 
-    // Inside inner loop:
-    // compare each pair of elements near each other
-    // swap them if the bigger one was at a lower index.
+// Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 
-    // Make sure to keep track of whether a swap happened!
+const runningSum = (nums) => {
+    let newArr = []
+    finalArr = []
+    for(let i = 0; i<nums.length; i++) {
+        // console.log(nums[i])
+        newArr.push(nums[i])
+        // console.log(newArr)
+     for(let j = 0; j<newArr.length; j++) {
+        // console.log(newArr[j])
+        finalArr.push(nums[i]+ newArr[j])
+        console.log(finalArr)
+    }       
+    }
 
-    // After both loops have exited, remember to return the array
-    // return array;
 }
 
-const test = [1, 4, 0, 9, -1];
-const test2 = [10, 24, -10, 2, -1];
-// console.log(bubbleSort(test2));
+const nums = [1,2,3,4]
+runningSum(nums)
+
+
+// Example
+// Input: nums = [1,2,3,4]
+// Output: [1,3,6,10]
+// Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
+
+// Return the running sum of nums.
