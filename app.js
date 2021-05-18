@@ -44,24 +44,18 @@
 
 // Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 
-const runningSum = (nums) => {
-    let newArr = []
-    finalArr = []
-    for(let i = 0; i<nums.length; i++) {
-        // console.log(nums[i])
-        newArr.push(nums[i])
-        // console.log(newArr)
-     for(let j = 0; j<newArr.length; j++) {
-        // console.log(newArr[j])
-        finalArr.push(nums[i]+ newArr[j])
-        console.log(finalArr)
-    }       
-    }
+// const runningSum = (nums) => {
+//     //started at 1 because the first number in our array will stay the same
+//     for(let i = 1; i<nums.length; i++) {
+//         //here we created a for loop,  
+//      nums[i] = nums[i] + nums [i-1]
+//      console.log(nums)
+//     } 
+// }
 
-}
-
-const nums = [1,2,3,4]
-runningSum(nums)
+// const nums = [1,2,3,4]
+// runningSum(nums)
+// console.log(runningSum(nums))
 
 
 // Example
@@ -70,3 +64,33 @@ runningSum(nums)
 // Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 
 // Return the running sum of nums.
+
+
+// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+// You can return the answer in any order.
+
+//Kristi's Notes
+// #same logic as above but add an if statement to it
+// need to return the index number of the elements that equal the target number. 
+// # indexOf method?
+// #
+
+// const targetSum = (nums) => {
+//     for(let i = 1; i<nums.length; i++) {
+//      nums[i] = nums[i] + nums [i-1]
+//      console.log(nums)
+    
+//     } 
+// }
+
+// const nums = [2,7,11,15]
+// targetSum(nums)
+// console.log(targetSum(nums))
+
+// Example:
+// Input: nums = [2,7,11,15], target = 9
+// Output: [0,1]
+// Output: Because nums[0] + nums[1] == 9, we return [0, 1].
