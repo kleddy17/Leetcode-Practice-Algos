@@ -135,22 +135,124 @@
 
 
 
-const findWordFrequencies = (str) =>{
-    //creating an array using the split method, and also ensuring they are all equal using the toLowerCase method. 
-    const sentArr = str.toLowerCase().split(' ')
-    //creating an empty object to be able to push each element into, creating that key value pair. 
-    const wordFrequency = {}
-    for(let word of sentArr) {
-        if (wordFrequency[word]) {
-        wordFrequency[word]++
-    } else {
-       wordFrequency[word] = 1 
-    }
+// const findWordFrequencies = (str) =>{
+//     //creating an array using the split method, and also ensuring they are all equal using the toLowerCase method. 
+//     const sentArr = str.toLowerCase().split(' ')
+//     //creating an empty object to be able to push each element into, creating that key value pair. 
+//     const wordFrequency = {}
+//     for(let word of sentArr) {
+//         if (wordFrequency[word]) {
+//         wordFrequency[word]++
+//     } else {
+//        wordFrequency[word] = 1 
+//     }
 
-}
-console.log(wordFrequency)
-return wordFrequency
-}
-findWordFrequencies('I , the, the, love lamp')
+// }
+// console.log(wordFrequency)
+// return wordFrequency
+// }
+// findWordFrequencies('I , the, the, love lamp')
 
 // Make it work just for sentences without commas, apostrophes, and periods. Capital letters and lowercase letters should be treated as equals: 'The' and 'the' are the same word.
+
+
+
+// Write a function findWordFrequencies that takes in a sentence (string), and returns an object with each word as a key, with a value of how many times that word appears in the sentence.
+// eg: { I: 1, love: 1, lamp: 1 }
+// Make it work just for sentences without commas, apostrophes, and periods. Capital letters and lowercase letters should be treated as equals: 'The' and 'the' are the same word.
+
+// const findWordFrequencies = (str) => {
+//     const sentArr = str.toLowerCase().split(' ')
+//     const wordFrequency = {}
+//     for(let word of sentArr) {
+//         if(wordFrequency[word]){
+//             wordFrequency[word]++
+//         }else{
+//             wordFrequency[word] =1 
+//         }  
+// }
+// console.log(wordFrequency)
+// return(wordFrequency)
+// }
+// findWordFrequencies("so so so sick of this algo")
+
+
+
+// Write a function findWordFrequencies that takes in a sentence (string), and returns an object with each word as a key, with a value of how many times that word appears in the sentence.
+// eg: { I: 1, love: 1, lamp: 1 }
+// Make it work just for sentences without commas, apostrophes, and periods. Capital letters and lowercase letters should be treated as equals: 'The' and 'the' are the same word.
+
+// const findWordFrequencies  = (str) => {
+//     const sentArr = str.toLowerCase().split(' ')
+//     const wordFrequency = {}
+//     for(let word of sentArr) {
+//         if(wordFrequency[word]) {
+//             wordFrequency[word]++
+//         }else{
+//             wordFrequency[word] = 1
+//         }
+//     }
+//     console.log(wordFrequency)
+//     return wordFrequency
+// }
+
+// findWordFrequencies("i will will will get a job")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
