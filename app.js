@@ -200,8 +200,33 @@
 
 
 
+// Loop the Loop: 2D Array Additon
+// Make a function that returns the greatest sum of a row or column from a two dimensional array
+
+// Make a function that takes one argument, a two dimensional array, where all the arrays are the same length, and returns the greatest sum of the numbers by row and column.
+
+// const arr = [ [10, 20, 30],
+//             [40, 50, 60],
+//             [70, -80, 90] ];
+
+// greatestSum(arr); //180
+// Contains Duplicate
+// Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
 
 
+// Example 1:
+// __Input__: nums = [1,2,3,1], k = 3
+// __Output__: true
+
+// Example 2:
+// __Input__: nums = [1,2,3,1,2,3], k = 2
+// __Output__: false
+
+// Starter Code
+// const arr = [1,0,1,1];
+// const k = 1;
+
+// containsNearbyDuplicate(arr, k); //true
 
 
 
