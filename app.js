@@ -200,29 +200,67 @@
 
 
 
-// Loop the Loop: 2D Array Additon
-// Make a function that returns the greatest sum of a row or column from a two dimensional array
 
-// Make a function that takes one argument, a two dimensional array, where all the arrays are the same length, and returns the greatest sum of the numbers by row and column.
 
-// const arr = [ [10, 20, 30],
-//             [40, 50, 60],
-//             [70, -80, 90] ];
+// Write a function findWordFrequencies that takes in a sentence (string), and returns an object with each word as a key, with a value of how many times that word appears in the sentence.
+// eg: { I: 1, love: 1, lamp: 1 }
+// Make it work just for sentences without commas, apostrophes, and periods. Capital letters and lowercase letters should be treated as equals: 'The' and 'the' are the same word.
 
-// greatestSum(arr); //180
+// const findWordFrequencies = (str) => {
+//     // create a new array (using the split method) to treat each word as an element, and using the toLowerCase method to make all the words the same case. 
+//     const newArr = str.toLowerCase().split(' ')
+//     //create a empty object to pass each element as a key/value pair.
+//     const wordFrequency = {}
+//     //using the for of method to iterate through each element of the array
+//     for(let word of newArr) 
+//     {
+//         if (wordFrequency[word] ){
+//             wordFrequency[word]++
+//         } else {
+//             wordFrequency[word] = 1
+//         }
+
+//     }
+//     console.log(wordFrequency)
+//     return wordFrequency
+// }
+
+// findWordFrequencies("Lucy please dont go up the stair anymore dont dont")
+
+
+// const findWordFrequencies = (str) => {
+//     const newArr = str.toLowerCase().split(' ')
+//     const wordFrequency = {}
+//     for (let word of newArr) {
+//         if (wordFrequency[word]) {
+//             wordFrequency[word]++
+//         } else {
+//             wordFrequency[word] = 1
+//         }
+//     }
+//     console.log(wordFrequency)
+//     return wordFrequency
+// }
+// findWordFrequencies("the quick brown dog jumped over the fence the other day")
+
+
+
+
+
+
 // Contains Duplicate
 // Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
 
 
-// Example 1:
+// // Example 1:
 // __Input__: nums = [1,2,3,1], k = 3
 // __Output__: true
 
-// Example 2:
+// // Example 2:
 // __Input__: nums = [1,2,3,1,2,3], k = 2
 // __Output__: false
 
-// Starter Code
+// // Starter Code
 // const arr = [1,0,1,1];
 // const k = 1;
 
@@ -230,10 +268,68 @@
 
 
 
+// Loop the Loop: 2D Array Additon
+// Make a function that returns the greatest sum of a row or column from a two dimensional array
+
+// Make a function that takes one argument, a two dimensional array, where all the arrays are the same length, and returns the greatest sum of the numbers by row and column.
+
+// // greatestSum(arr); //180
+
+// const multi = [ [10, 20, 30],
+//             [40, 50, 60],
+//             [70, -80, 90] ];
+
+// let rows = multi.length;
+// for(let i = 0; i<rows; i++) {
+//     let items = multi[i].length;
+//     // console.log( items)
+//         for(let n =0; n<items; n++) {
+//             console.log([n])
+        
+//     }
+// }
 
 
+// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+// You can return the answer in any order.
+
+ 
 
 
+const twoSum = (nums, target) => {
+for (let i = 0; i<nums.length; i++) {
+    for (let j = i; j< nums.length; i++) {
+        if (nums[i] + nums[j] == target) {
+            console.log(i,j)
+            return(i,j)
+        }
+    }
+}
+
+}
+
+
+nums = [2,7,11,15]
+target = 9
+twoSum(nums, target)
+
+// Example 1:
+
+// Input: nums = [2,7,11,15], target = 9
+// Output: [0,1]
+// Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+// Example 2:
+
+// Input: nums = [3,2,4], target = 6
+// Output: [1,2]
+// Example 3:
+
+// Input: nums = [3,3], target = 6
+// Output: [0,1]
+ 
 
 
 
